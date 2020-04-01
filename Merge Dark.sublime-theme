@@ -179,7 +179,7 @@
         // "blame_popup_bg": "color(var(--background) l(+ 10%))",
 
         // // Buttons
-        // "button_bg": "color(white a(0.3))",
+        "button_bg": "color(var(dark_accent) l(+ 5%)))",
         // "button_fg": "var(label_color)",
         // "button_shadow": "color(black a(0.5))",
 
@@ -223,7 +223,7 @@
         // "quick_panel_row_bg": "var(dark_gray)",
 
         // // Switch repository window
-        // "switch_repo_bg": "var(dark_gray-light)",
+        "switch_repo_bg": "var(dark_background)",
 
         // // Hints
         // "failed_label_fg": "var(dark_gray)",
@@ -241,7 +241,11 @@
 
         // Tabs
         "repository_tab_bar_bg": "var(dark_background)", // ? Title bar background color
-        "repository_tab_bar_border_bg": "var(medium_gray-light)", // ? Seperator to the right of the Tabs in the titlebar
+        "repository_tab_bar_border_bg": "var(dark_accent)", // ? Seperator to the right of the Tabs in the titlebar
+
+        // Hazard buttons
+        "hazard_button_bg": "color(var(red) l(25%))",
+        // "hazard_button_bg": "var(red)",
 
         // "file_badge_modified_fg": "var(medium_gray)",
         // "file_badge_unmerged_fg": "#2e1d07",
@@ -252,6 +256,27 @@
     },
     "rules":
     [
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["hover"],
+            "layer0.tint": "var(dark_accent)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 16, 0, 0],
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(dark_accent)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 16, 0, 0],
+        },
+        {
+            "class": "commit_summary_control",
+            "attributes": ["hover"],
+            "layer0.tint": "var(commit_row_bg-hover)",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8, 4, 8]
+        },
         // ~ Tree View Hover
         {
             "class": "table_of_contents_row_container",
