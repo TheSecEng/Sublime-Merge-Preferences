@@ -88,7 +88,11 @@
         "commit_row_bg-hover": "var(dark_accent)", // ~ Commit row selection color
         // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
         
-        
+        // Tool Tips
+        // ~ Hover Over Button Results
+        "tool_tip_bg": "var(dark_accent_lightest)",
+        "tool_tip_fg": "white",
+
         // "commit_edge_0": "var(blue)",
         // "commit_edge_1": "var(purple)",
         // "commit_edge_2": "var(magenta)",
@@ -256,6 +260,13 @@
     },
     "rules":
     [
+        // ~ Hover tool tip 
+        {
+            "class": "tool_tip_label_control",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "fg": "var(tool_tip_fg)"
+        },
         {
             "class": "preferences_section_table_row",
             "attributes": ["hover"],
