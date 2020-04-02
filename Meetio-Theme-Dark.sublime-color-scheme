@@ -670,48 +670,6 @@
             "foreground": "var(foreground)", 
             "name": "VUE - Console, \"console\"", 
             "scope": "text.html.vue meta.property.object"
-        }, 
-        {
-            "foreground": "#00CCFF", 
-            "name": "[Colored Comments] Description", 
-            "scope": "colored.comments.color.description", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#98C379", 
-            "name": "[Colored Comments] Deprecated", 
-            "scope": "colored.comments.color.deprecated", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#9933FF", 
-            "name": "[Colored Comments] Fixme", 
-            "scope": "colored.comments.color.fixme", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#FF8C00", 
-            "name": "[Colored Comments] Todo", 
-            "scope": "colored.comments.color.todo", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#474747", 
-            "name": "[Colored Comments] Undefined", 
-            "scope": "colored.comments.color.undefined", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#FF2D00", 
-            "name": "[Colored Comments] Important", 
-            "scope": "colored.comments.color.important", 
-            "background": "rgba(1,22,38, 0.01)"
-        }, 
-        {
-            "foreground": "#3498DB", 
-            "name": "[Colored Comments] Question", 
-            "scope": "colored.comments.color.question", 
-            "background": "rgba(1,22,38, 0.01)"
         }
     ]
 }

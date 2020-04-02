@@ -2,15 +2,34 @@
     "extends": "Merge.sublime-theme",
     "variables":
     {
-        // ~ Meetio Inspired
-        "dark_background": "rgb(5,17, 29)",
-        "dark_accent": "#011627",
-        "dark_accent_lightest": "color(var(dark_background) l(15%))",
-        // ~ End Meetio
-        
-        // ~ Font
+        "background": "rgb(5,17, 29)",
+
+        "accent": "#011627",
+        "accent_dark": "color(var(accent) l(- 0.75%))",
+        "accent_darker": "color(var(accent) l(- 1.00%))",
+        "accent_darkest": "color(var(accent) l(- 2.00%))",
+        "accent_light": "color(var(accent) l(+ 2%))",
+        "accent_lighter": "color(var(accent) l(+ 4%))",
+        "accent_lightest": "color(var(accent) l(+ 10%))",
+
+        "cursor": "#ffcc00",
+        "foreground": "#dedfe4",
+        "comments": "#637777",
+        "blue": "#82aaff",
+        "brown": "#c17e70",
+        "cyan": "#7fdbca",
+        "green": "#c3e88d",
+        "orange": "#f78c6c",
+        "pink": "#ff5874",
+        "purple": "#c2afff",
+        "red": "#d95757",
+        "yellow": "#ffcb8b",
+        "deprecated": "#ffc777a1",
+        "invalid": "#d46c6c66",
+        "diff added": "#addb67",
+        "diff modified": "#e2b93d",
+        "diff deleted": "#ef5350",
         "font_face": "Victor Mono",
-        // ~ End Font
 
         // "text-heading": "#ddd",
         // "text": "#aaa",
@@ -38,13 +57,12 @@
 
         // Header
         "title_bar_style": "dark",
-        "header_bg": "color(var(dark_background))",
+        "header_bg": "var(background)",
         // "header_bg": "color(var(dark_gray-medium))",
        
         // "header_fg": "var(text-heading)",
        
-        "header_button_bg": "color(var(dark_background) a(0.5))",
-        // "header_button_bg": "color(var(medium_gray) a(0.5))",
+        "header_button_bg": "var(accent_light)",
        
         // "icon_button_fg": "#FFF",
 
@@ -61,37 +79,36 @@
         // "focus_highlight_color": "var(text)",
 
         // Welcome overlay
-        "welcome_bg": "color(var(dark_background) l(- 0.75%))",
-        // "welcome_bg": "color(var(dark_gray) l(- 3%))",
-        "recent_repositories_row_bg-hover": "var(dark_accent)",
-        // "recent_repositories_row_bg-hover": "var(dark_gray-light)",
+        "welcome_bg": "var(accent_darker)",
+        "recent_repositories_row_bg-hover": "var(accent)",
 
         // Preferences Page
-        "preferences_overlay_bg": "var(dark_background)",
-        // "preferences_overlay_bg": "var(dark_gray-medium)",
-        "preferences_section_table_bg": "var(dark_background)",
-        // "preferences_section_table_bg": "var(dark_gray-lightest)",
+        "preferences_overlay_bg": "var(background)",
+        "preferences_section_table_bg": "var(background)",
 
         // Side bar
         // "location_bar_fg": "var(text)",
         // "location_bar_heading_fg": "var(text-heading)",
         // "location_bar_heading_shadow": "black",
 
-        "location_bar_row_bg-hover": "var(dark_accent)",
-        // "location_bar_row_bg-hover": "var(--background)",
+        "location_bar_row_bg-hover": "var(accent)",
         
         // "disclosure_fg": "white",
 
         // Commit list
-        "commit_list_bg": "var(dark_background)", // ~ Commit Left Background
-        // "commit_list_bg": "var(dark_gray-lightest)",
-        "commit_row_bg-hover": "var(dark_accent)", // ~ Commit row selection color
-        // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
+        "commit_list_bg": "var(background)", // ~ Commit Left Background
+        "commit_row_bg-hover": "var(accent)", // ~ Commit row selection color
         
         // Tool Tips
         // ~ Hover Over Button Results
-        "tool_tip_bg": "var(dark_accent_lightest)",
+        "tool_tip_bg": "var(accent_lighter)",
         "tool_tip_fg": "white",
+
+        // Toggle Button
+        // ~ Left Panel > Files Tab > Bottom Switcher
+        "toggle_button_bg": "color(var(accent_lightest) a(0.5))",
+        "toggle_button_fg": "var(foreground)",
+        "toggle_button_fg_selected": "var(foreground)",
 
         // "commit_edge_0": "var(blue)",
         // "commit_edge_1": "var(purple)",
@@ -101,50 +118,50 @@
         // "commit_edge_5": "color(var(teal) l(50%))",
 
         // Location Bar
-        "side_bar_container_bg": "var(dark_background)",
-        // "side_bar_container_bg": "var(dark_gray-light)",
+        "side_bar_container_bg": "var(background)",
 
         // Table of Contents
-        "table_of_contents_bg": "var(dark_background)", // todo find what this changes
-        //  tree view?
+        "table_of_contents_bg": "var(background)", // todo find what this changes
    
         // "table_of_contents_fg": "var(text)",
         // "table_of_contents_heading_fg": "var(text-heading)",
 
-        "table_of_contents_row_bg": "var(dark_accent)", // ~ Tree view hover
-        // "table_of_contents_row_bg": "var(medium_gray)",
+        "table_of_contents_row_bg": "var(accent)", // ~ Tree view hover
 
         // Detail panel
-        "detail_panel_bg": "var(dark_accent)", // ~ Details View
+        "detail_panel_bg": "var(accent)", // ~ Details View
 
         // "field_name_fg": "var(text)",
         // "author_fg": "color(var(--foreground) a(0.4))",
-        // "terminator_fg": "var(medium_gray)",
+        // "terminator_fg": "var(accent_lighter)",
 
         // Annotations
         // "head_ann_fg": "var(dark_gray)",
-        // "head_ann_bg": "var(purple)",
+        "head_ann_bg": "var(purple)",
 
         // "branch_ann_fg": "var(dark_gray)",
-        // "branch_ann_bg": "var(blue)",
+        "branch_ann_bg": "var(blue)",
 
         // "remote_ann_fg": "var(dark_gray)",
-        // "remote_ann_bg": "color(var(teal))",
+        "remote_ann_bg": "var(cyan)",
 
         // "tag_ann_fg": "var(dark_gray)",
-        // "tag_ann_bg": "var(yellow)",
+        "tag_ann_bg": "var(yellow)",
 
         // "stash_ann_fg": "var(dark_gray)",
-        // "stash_ann_bg": "var(orange)",
+        "stash_ann_bg": "var(orange)",
 
         // "file_ann_fg": "var(text)",
-        // "file_ann_bg": "color(var(file_ann_fg) a(0.3))",
+        // ~ Left Panel > Commits Tab > Number Right of Commit Message
+        "file_ann_bg": "color(var(accent_lightest) a(0.75))",
+        // ~ Left Panel > Locations Tab > Number Right of Branch Name
+        "branch_stats_label_bg": "color(var(accent_lightest) a(0.75))",
 
         // "submodule_ann_bg": "var(dark_gray-lightest)",
         // "submodule_light_ann_bg": "var(dark_gray-lightest)",
 
-        // "inserted_ann_bg": "color(var(dark_teal) s(- 10%))",
-        // "deleted_ann_bg": "color(var(dark_red) s(- 10%))",
+        "inserted_ann_bg": "color(var(cyan) a(0.50))",
+        "deleted_ann_bg": "color(var(red) a(0.50))",
 
         // Diff headers
         // "file_diff_shadow": "color(black a(0.5))",
@@ -153,13 +170,9 @@
         // "hunk_button_fg": "#eee",
         // "hunk_button_shadow": "color(black a(0.5))",
 
-        "file_header_bg": "var(dark_background)", // ~ File header in Right Detail View
-        // "file_header_bg": "color(var(--background) l(+ 5%))",
-        "file_header_bg-hover": "var(dark_accent)", // ~ File header hover in Right Detail View
-        // "file_header_bg-hover": "color(var(--background) l(+ 8%))",
-
-        "hunk_header_bg": "color(var(dark_accent) l(+ 1%))", // ~ Hunk header in Right Detail View
-        // "hunk_header_bg": "color(var(--background) l(+ 11%))",
+        "file_header_bg": "var(background)", // ~ File header in Right Detail View
+        "file_header_bg-hover": "var(accent)", // ~ File header hover in Right Detail View
+        "hunk_header_bg": "var(accent_light)", // ~ Hunk header in Right Detail View
 
         // "deleted_icon_fg": "var(text)",
         // "deleted_header_bg": "var(dark_red)",
@@ -179,11 +192,11 @@
         // "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
         // "renamed_file_deleted": "color(var(red) s(50%) l(65%))",
 
-        // // Blame
+        // Blame
         // "blame_popup_bg": "color(var(--background) l(+ 10%))",
 
-        // // Buttons
-        "button_bg": "color(var(dark_accent) l(+ 5%)))",
+        // Buttons
+        "button_bg": "var(accent_lighter)",
         // "button_fg": "var(label_color)",
         // "button_shadow": "color(black a(0.5))",
 
@@ -198,57 +211,57 @@
         // "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "var(dark_accent)", // ~ Tabs background (Locations, Commits, Files, Summary..)
+        "tab_bar_bg": "var(accent)", // ~ Tabs background (Locations, Commits, Files, Summary..)
         // "tab_bar_bg": "var(dark_gray-medium)",
-        // "tab_separator_bg": "var(medium_gray-dark)",
+        "tab_separator_bg": "var(accent_lightest)",
 
-        // // Radio buttons
+        // Radio buttons
         // "radio_back": "var(--background)",
         // "radio_selected": "var(blue)",
         // "radio_border-selected": "var(blue)",
 
-        // // Checkbox buttons
+        // Checkbox buttons
         // "checkbox_back": "var(--background)",
         // "checkbox_selected": "var(blue)",
         // "checkbox_border-selected": "var(blue)",
 
-        // // Dialogs
+        // Dialogs
         // "dialog_bg": "var(dark_gray-light)",
         // "dialog_button_bg": "var(medium_gray)",
 
-        // // Progress bar
+        // Progress bar
         // "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
         // "progress_fg": "color(var(medium_gray) a(0.5))",
 
         // Quick panel
-        "quick_panel_bg": "var(dark_background)", // ~ Background Panel
+        "quick_panel_bg": "var(background)", // ~ Background Panel
         // "quick_panel_bg": "var(dark_gray-light)",
-        "quick_panel_row_bg": "var(dark_accent_lightest)", // ~ Active Row / Hover Row Background on the Panel
+        "quick_panel_row_bg": "var(accent_lighter)", // ~ Active Row / Hover Row Background on the Panel
         // "quick_panel_row_bg": "var(dark_gray)",
 
-        // // Switch repository window
-        "switch_repo_bg": "var(dark_background)",
+        // Switch repository window
+        "switch_repo_bg": "var(background)",
 
-        // // Hints
+        // Hints
         // "failed_label_fg": "var(dark_gray)",
 
-        // // Loading
+        // Loading
         // "loading_ball_1": "var(medium_gray)",
         // "loading_ball_2": "var(blue)",
 
-        // // Command Palette
+        // Command Palette
         // "preview_fg": "white",
 
         // Merge Helper
         "merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
-        "console_border": "var(dark_background)", // ? Console Border
+        "console_border": "var(background)", // ? Console Border
 
         // Tabs
-        "repository_tab_bar_bg": "var(dark_background)", // ? Title bar background color
-        "repository_tab_bar_border_bg": "var(dark_accent)", // ? Seperator to the right of the Tabs in the titlebar
+        "repository_tab_bar_bg": "var(background)", // ? Title bar background color
+        "repository_tab_bar_border_bg": "var(accent)", // ? Seperator to the right of the Tabs in the titlebar
 
         // Hazard buttons
-        "hazard_button_bg": "color(var(red) l(25%))",
+        "hazard_button_bg": "var(red)",
         // "hazard_button_bg": "var(red)",
 
         // "file_badge_modified_fg": "var(medium_gray)",
@@ -270,14 +283,14 @@
         {
             "class": "preferences_section_table_row",
             "attributes": ["hover"],
-            "layer0.tint": "var(dark_accent)",
+            "layer0.tint": "var(accent)",
             "layer0.opacity": 1.0,
             "content_margin": [0, 16, 0, 0],
         },
         {
             "class": "preferences_section_table_row",
             "attributes": ["selected"],
-            "layer0.tint": "var(dark_accent)",
+            "layer0.tint": "var(accent)",
             "layer0.opacity": 1.0,
             "content_margin": [0, 16, 0, 0],
         },
@@ -300,6 +313,14 @@
             "attributes": ["selected"],
             "layer0.opacity": 1.0,
         },
+        {
+            "class": "file_diff_header",
+            "layer0.tint": "var(accent)",
+        },
+        {
+            "class": "file_diff_header collapsible",
+            "layer0.tint": "var(accent_lighter)",
+        },
         // {
         //     "class": "tab_close_button",
         //     "layer0.texture": "Theme - Default/common/dark/tab_close.png",
@@ -313,7 +334,7 @@
         {
             "class": "info_area",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(dark_accent)",
+            "layer0.tint": "var(accent)",
         },
         // {
         //     "class": "info_area",
