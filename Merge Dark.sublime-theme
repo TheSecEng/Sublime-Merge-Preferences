@@ -160,8 +160,8 @@
         // "submodule_ann_bg": "var(dark_gray-lightest)",
         // "submodule_light_ann_bg": "var(dark_gray-lightest)",
 
-        "inserted_ann_bg": "color(var(cyan) l(- 35%))",
-        "deleted_ann_bg": "color(var(red) l(- 35%))",
+        "inserted_ann_bg": "color(var(cyan) a(0.50))",
+        "deleted_ann_bg": "color(var(red) a(0.50))",
 
         // Diff headers
         // "file_diff_shadow": "color(black a(0.5))",
