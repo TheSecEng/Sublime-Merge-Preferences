@@ -1,7 +1,21 @@
 {
 	"theme": "Merge Dark.sublime-theme",
+    // "syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
 	"render_commit_dialog_message_at_top": true,
 	"side_bar_layout": "tabs",
 	"time_format": "24h",
 	"log_control_tree": true,
+	"caret_style": "solid",
+    "block_caret": false,
+	"caret_extra_top": 4,
+    "caret_extra_bottom": 4,
+    "caret_extra_width": 1,
+    "rulers": [
+        80,
+        120,
+        160
+    ],
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
+    "highlight_line": true,
 }
