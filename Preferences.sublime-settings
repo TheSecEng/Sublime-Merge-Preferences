@@ -5,6 +5,8 @@
 	"side_bar_layout": "tabs",
 	"time_format": "24h",
 	"log_control_tree": true,
+    "log_input": false,
+    "log_commands": false,
 	"caret_style": "solid",
     "block_caret": false,
 	"caret_extra_top": 4,
