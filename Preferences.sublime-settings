@@ -28,4 +28,5 @@
     "highlight_line": true,
 
     // ? "mini_diff": true,
+	"expand_merge_commits_by_default": false,
 }
