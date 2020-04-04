@@ -1,4 +1,5 @@
 {
     "color_scheme": "Meetio-Theme-Dark.sublime-color-scheme",
-    "draw_shadows": false
+    "syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
+    // "draw_shadows": false
 }

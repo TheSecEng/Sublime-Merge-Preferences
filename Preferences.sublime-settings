@@ -1,13 +1,19 @@
 {
 	"theme": "Merge Dark.sublime-theme",
-    // "syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
+    "syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
 	"render_commit_dialog_message_at_top": true,
 	"side_bar_layout": "tabs",
 	"time_format": "24h",
 	"log_control_tree": true,
     "log_input": false,
     "log_commands": false,
+    "font_face": "Victor Mono",
+    "font_options": [
+        "gray_antialias",
+        "subpixel_antialias"
+    ],
 	"caret_style": "solid",
+    // "caret_blink_interval": 0.1,
     "block_caret": false,
 	"caret_extra_top": 4,
     "caret_extra_bottom": 4,
@@ -20,4 +26,6 @@
     "line_padding_bottom": 3,
     "line_padding_top": 3,
     "highlight_line": true,
+
+    // ? "mini_diff": true,
 }
