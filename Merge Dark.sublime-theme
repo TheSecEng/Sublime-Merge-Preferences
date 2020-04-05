@@ -236,7 +236,7 @@
 
         // Dialogs
         "dialog_bg": "var(background)",
-        // "dialog_button_bg": "var(medium_gray)",
+        "dialog_button_bg": "var(accent_lighter)",
 
         // Progress bar
         // "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
@@ -282,7 +282,6 @@
     },
     "rules":
     [
-
         // ~ Hover tool tip 
         {
             "class": "tool_tip_label_control",
