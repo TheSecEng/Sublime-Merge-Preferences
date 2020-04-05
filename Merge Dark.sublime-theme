@@ -235,7 +235,7 @@
         // "checkbox_border-selected": "var(blue)",
 
         // Dialogs
-        // "dialog_bg": "var(dark_gray-light)",
+        "dialog_bg": "var(background)",
         // "dialog_button_bg": "var(medium_gray)",
 
         // Progress bar
