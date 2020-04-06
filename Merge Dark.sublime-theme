@@ -64,7 +64,7 @@
         "locationBarFg": "var(foreground)",
         "locationBarHeadingFg": "var(foreground)",
         "locationBarHeadingShadow": "black",
-        "locationBarRowBgHover": "var(accentLight)",
+        "locationBarRowBgHover": "var(background)",
         "disclosureFg": "white",
         "commitListBg": "var(background)",
         "commitRowBgHover": "var(background)",
@@ -86,7 +86,7 @@
         "detailPanelBg": "var(background)",
         "fieldNameFg": "var(foreground)",
         "authorFg": "color(var(--foreground) a(0.4))",
-        "terminatorFg": "var(accentLightest)",
+        "terminatorFg": "var(accentLighter)",
         "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
         "headAnnFg": "var(darkGray)",
@@ -134,8 +134,9 @@
         "highlightedButtonDarkBg": "color(hsl(83, 40%, 44%))",
         "highlightedButtonDarkFg": "var(labelColor)",
         "highlightedButtonShadow": "color(black a(0.5) l(+ 10%))",
-        "toggleButtonBg": "color(var(accentLightest) a(0.5))",
+        "toggleButtonBg": "color(var(background) a(1.0))",
         "toggleButtonFg": "var(foreground)",
+        "toggleButtonBorderBg": "color(var(accentLightest) a(0.5))",
         "toggleButtonFgSelected": "var(foreground)",
         "tabBarBg": "var(background)",
         "tabSeparatorBg": "var(accentLighter)",
@@ -393,7 +394,7 @@
                 "target": 0,
                 "speed": 4,
                 "interpolation": "smoothstep"
-            }
+            },
         },
         {
             "class": "toggle_button left",
@@ -422,7 +423,7 @@
                 "target": 0,
                 "speed": 4,
                 "interpolation": "smoothstep"
-            }
+            },
         },
         {
             "class": "toggle_button right",
@@ -2108,14 +2109,14 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.2
+            "layer0.opacity": 1.0
         },
         {
             "class": "table_of_contents_row_container",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 0.4
+            "layer0.opacity": 1.0
         },
         {
             "class": "table_of_contents_heading",
@@ -2166,7 +2167,7 @@
         },
         {
             "class": "commit_summary_control",
-            "layer0.tint": "var(accentLight)",
+            "layer0.tint": "var(commitRowBgHover)",
             "layer0.opacity": 0,
             "content_margin": [
                 8,
@@ -3939,34 +3940,6 @@
             "layer0.opacity": 1
         },
         {
-            "class": "preferences_section_table_row",
-            "attributes": [
-                "hover"
-            ],
-            "layer0.tint": "var(preferencesSectionTableRowBg)",
-            "layer0.opacity": 1,
-            "content_margin": [
-                0,
-                16,
-                0,
-                0
-            ]
-        },
-        {
-            "class": "preferences_section_table_row",
-            "attributes": [
-                "selected"
-            ],
-            "layer0.tint": "var(accentLightest)",
-            "layer0.opacity": 1,
-            "content_margin": [
-                0,
-                16,
-                0,
-                0
-            ]
-        },
-        {
             "class": "preferences_buttons_container",
             "content_margin": 8,
             "layer0.tint": "var(preferencesOverlayBg)",
@@ -4478,20 +4451,26 @@
             ],
             "fg_blend": true
         },
+        // Section: Preference Table Rows
         {
             "class": "table_row",
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.1
+            "layer0.opacity": 1.0,
+            // - Added
+            "layer0.tint": "var(background)"
         },
         {
             "class": "table_row",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 0.2
+            "layer0.opacity": 1.0,
+            // - Added
+            "layer0.tint": "var(background)"
         },
+        // - End Section
         {
             "class": "table_row",
             "parents": [
