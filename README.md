@@ -2,7 +2,7 @@
 
 1. `cd ~/Library/Application\ Support/`
   
-2. `git@github.com:TheSecEng/Sublime-Merge---Meetio-Theme.git .`
+2. `git@github.com:TheSecEng/Sublime-Merge-Preferences.git .`
   
 3. **Done**
 
