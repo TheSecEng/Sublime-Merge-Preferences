@@ -2,9 +2,8 @@
     "extends": "Merge.sublime-theme",
     "variables": {
         "font_face": "Victor Mono",
-        "textHeading": "#ddd",
-        "text": "#aaa",
         "cursor": "#ffcc00",
+        "transparent": "transparent",
         "foreground": "#dedfe4",
         "background": "#011627",
         "comments": "#637777",
@@ -31,7 +30,7 @@
         "teal": "hsl(180, 40%, 65%)",
         "magenta": "hsl(330, 70%, 65%)",
         "darkRed": "color(var(red) s(25%) l(35%))",
-        "darkTeal": "color(var(teal) s(25%) l(35%))",
+        "darkCyan": "color(var(cyan) s(25%) l(35%))",
         "darkBlue": "color(var(blue) s(25%) l(35%))",
         "mediumGray": "hsl(210, 10%, 50%)",
         "darkGrayLightest": "hsl(210, 10%, 19%)",
@@ -43,8 +42,8 @@
         "branchStatsLabelBg": "color(var(accentLightest) a(0.75))",
         "titleBarStyle": "dark",
         "titleBarBg": "var(accentDarkest)",
-        // ~ Section: Titlebar Background
-        "headerBg": "var(accentDarkest)", // - original(backgruond)
+        // Section: Titlebar Background
+        "headerBg": "var(accentDarkest)", 
         "headerFg": "var(foreground)",
         "headerButtonBg": "var(accentLight)",
         // - End Section
@@ -76,9 +75,9 @@
         "commitEdge2": "var(magenta)",
         "commitEdge3": "color(var(orange) l(- 10%))",
         "commitEdge4": "var(yellow)",
-        "commitEdge5": "color(var(teal) l(50%))",
-        // ~ Section: Sidebar Container Background
-        "sideBarContainerBg": "var(accentDarkest)",  // - original(backgruond)
+        "commitEdge5": "color(var(cyan) l(50%))",
+        // Section: Sidebar Container Background
+        "sideBarContainerBg": "var(accentDarkest)",
         // - End Section
         "tableOfContentsBg": "var(background)",
         "tableOfContentsFg": "var(foreground)",
@@ -1966,6 +1965,11 @@
         {
             "class": "button_control icon_button transparent",
             "min_size": 0,
+            // ! Added
+            "layer0.tint": "var(transparent)",
+            "layer1.tint": "var(transparent)",
+            "layer2.tint": "var(transparent)",
+            // - End
             "content_margin": [
                 2,
                 2
