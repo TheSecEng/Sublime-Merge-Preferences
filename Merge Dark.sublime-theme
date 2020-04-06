@@ -39,6 +39,11 @@
         "darkGrayMedium": "hsl(210, 10%, 13%)",
         "darkGray": "hsl(210, 10%, 10%)",
         "labelColor": "var(foreground)",
+        // Section: Tab's
+        "tabLabelColor": "color(var(foreground) a(0.50))",
+        "tabLabelColorHover": "color(var(colorAccent) a(1.0))",
+        "tabLabelColorSelected": "color(var(colorAccent) a(1.0))",
+        // - End Section
         "helpLabelColor": "color(var(foreground) a(0.6))",
         "branchStatsLabelBg": "color(var(accentLightest) a(0.75))",
         "titleBarStyle": "dark",
@@ -108,6 +113,11 @@
         "submoduleLightAnnBg": "var(darkGrayLightest)",
         "insertedAnnBg": "color(var(cyan) a(0.50))",
         "deletedAnnBg": "color(var(red) a(0.50))",
+        // Description: Git Output Icons
+        "outputSucceededFg": "var(green)",
+        "outputFailedFg": "var(red)",
+        "outputRunningFg": "var(cyan)",
+        "outputCanceledFg": "var(red)",
         "fileDiffShadow": "color(black a(0.5))",
         "fileIconBg": "color(white a(0.2))",
         "hunkButtonFg": "#eee",
@@ -276,7 +286,7 @@
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.tint": "var(buttonBgHover)",
+            "layer1.tint": "color(var(accentLightest) a(0.50))",
         },
         {
             "class": "button_control",
@@ -1185,22 +1195,22 @@
         },
         {
             "class": "git_output_button succeeded",
-            "layer2.tint": "var(output_succeeded_fg)",
+            "layer2.tint": "var(outputSucceededFg)",
             "layer2.texture": "Theme - Merge/icon_output_succeeded.png"
         },
         {
             "class": "git_output_button failed",
-            "layer2.tint": "var(output_failed_fg)",
+            "layer2.tint": "var(outputFailedFg)",
             "layer2.texture": "Theme - Merge/icon_output_failed.png"
         },
         {
             "class": "git_output_button running",
-            "layer2.tint": "var(output_running_fg)",
+            "layer2.tint": "var(outputRunningFg)",
             "layer2.texture": "Theme - Merge/icon_output_running.png"
         },
         {
             "class": "git_output_button cancelled",
-            "layer2.tint": "var(output_cancelled_fg)",
+            "layer2.tint": "var(outputCanceledFg)",
             "layer2.texture": "Theme - Merge/icon_output_cancelled.png"
         },
         {
@@ -4615,9 +4625,21 @@
         },
         {
             "class": "tab_label",
-            "fg": "color(var(labelColor) a(0.9))",
+            "fg": "var(tabLabelColor)",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)"
+        },
+        {
+            "class": "tab_label",
+            "parents": [
+                {
+                    "class": "tab_control",
+                    "attributes": [
+                        "hover"
+                    ]
+                }
+            ],
+            "fg": "var(tabLabelColorHover)"
         },
         {
             "class": "tab_label",
@@ -4629,7 +4651,7 @@
                     ]
                 }
             ],
-            "fg": "var(labelColor)"
+            "fg": "var(tabLabelColorSelected)"
         },
         {
             "class": "tab_close_button",
