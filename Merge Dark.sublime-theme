@@ -902,7 +902,7 @@
             "row_padding": 6,
             "layer0.tint": "var(quickPanelBg)",
             "layer0.opacity": 1,
-            "dark_content": false
+            "dark_content": true
         },
         {
             "class": "text_line_control",
@@ -1845,7 +1845,7 @@
             "indent": 12,
             "indent_offset": 13,
             "indent_top_level": true,
-            "dark_content": false
+            "dark_content": true
         },
         {
             "class": "location_bar_tree",
@@ -2078,7 +2078,7 @@
             "indent": 12,
             "indent_offset": 13,
             "indent_top_level": true,
-            "dark_content": false
+            "dark_content": true
         },
         {
             "class": "table_of_contents_tree",
@@ -3934,7 +3934,7 @@
                 12,
                 6
             ],
-            "dark_content": false,
+            "dark_content": true,
             "layer0.tint": "var(preferencesSectionTableBg)",
             "layer0.opacity": 1
         },
@@ -4256,7 +4256,7 @@
             "indent": 12,
             "indent_offset": 13,
             "indent_top_level": false,
-            "dark_content": false
+            "dark_content": true
         },
         {
             "class": "tree_row",
