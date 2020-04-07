@@ -1,6 +1,7 @@
 {
     "extends": "Merge.sublime-theme",
-    "variables": {
+    "variables":
+    {
         "font_face": "Victor Mono",
         "cursor": "#ffcc00",
         "transparent": "transparent",
@@ -49,7 +50,7 @@
         "titleBarStyle": "dark",
         "titleBarBg": "var(accentDarkest)",
         // Section: Titlebar Background
-        "headerBg": "var(accentDarkest)", 
+        "headerBg": "var(accentDarkest)",
         "headerFg": "var(foreground)",
         "headerButtonBg": "var(accentLight)",
         // - End Section
@@ -232,10 +233,9 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control"
-                }
-            ],
+            {
+                "class": "button_control"
+            }],
             "fg": "var(buttonFg)",
             "shadow_color": "var(buttonShadow)",
             "shadow_offset": [
@@ -246,7 +246,8 @@
         {
             "class": "button_control",
             "layer1.tint": "var(buttonBg)",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -281,7 +282,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -293,7 +295,8 @@
             "attributes": [
                 "confirm"
             ],
-            "layer2.opacity": {
+            "layer2.opacity":
+            {
                 "target": 0.5,
                 "speed": 2,
                 "interpolation": "smoothstep"
@@ -312,7 +315,8 @@
                 "pressed",
                 "confirm"
             ],
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -321,13 +325,12 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "confirm"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "confirm"
+                ]
+            }],
             "fg": "var(hazard_button_fg)",
             "shadow_color": "var(hazard_button_shadow)",
             "shadow_offset": [
@@ -370,22 +373,20 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control_right"
-                }
-            ],
+            {
+                "class": "button_control_right"
+            }],
             "fg": "var(split_button_right_fg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control_right",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control_right",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "fg": "var(split_button_right_fg-hover)"
         },
         {
@@ -407,7 +408,8 @@
         {
             "class": "toggle_button left",
             "layer0.texture": "Theme - Merge/button_outline_left.png",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -419,7 +421,8 @@
                 "hover"
             ],
             "layer1.tint": "var(toggleButtonBg)",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.3,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -436,7 +439,8 @@
         {
             "class": "toggle_button right",
             "layer0.texture": "Theme - Merge/button_outline_right.png",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -448,7 +452,8 @@
                 "hover"
             ],
             "layer1.tint": "var(toggleButtonBg)",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.3,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -465,22 +470,20 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "toggle_button"
-                }
-            ],
+            {
+                "class": "toggle_button"
+            }],
             "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "toggle_button",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "toggle_button",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "fg": "var(toggleButtonFgSelected)"
         },
         {
@@ -506,10 +509,9 @@
         {
             "class": "tab",
             "parents": [
-                {
-                    "class": "side_bar_container with_graph"
-                }
-            ],
+            {
+                "class": "side_bar_container with_graph"
+            }],
             "layer0.tint": "var(side_bar_container_with_graph_bg)"
         },
         {
@@ -517,7 +519,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -535,22 +538,20 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "tab"
-                }
-            ],
+            {
+                "class": "tab"
+            }],
             "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "tab",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "tab",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "fg": "var(toggleButtonFgSelected)"
         },
         {
@@ -580,10 +581,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "details_tab_bar"
-                }
-            ],
+            {
+                "class": "details_tab_bar"
+            }],
             "left_shadow": "var(scroll_shadow)",
             "left_shadow_size": 8,
             "right_shadow": "var(scroll_shadow)",
@@ -592,43 +592,39 @@
         {
             "class": "tab",
             "parents": [
-                {
-                    "class": "details_tab_bar"
-                }
-            ],
+            {
+                "class": "details_tab_bar"
+            }],
             "layer0.tint": "var(location_tab_bg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "details_tab_bar"
-                }
-            ],
+            {
+                "class": "details_tab_bar"
+            }],
             "fg": "color(var(tab_button_fg) a(0.8))"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "all_button"
-                }
-            ],
+            {
+                "class": "all_button"
+            }],
             "fg": "color(var(tab_button_fg) a(1.0))"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "details_tab_bar"
-                },
-                {
-                    "class": "tab",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "details_tab_bar"
+            },
+            {
+                "class": "tab",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "fg": "color(var(tab_button_fg) a(1.0))"
         },
         {
@@ -652,26 +648,24 @@
         {
             "class": "checkbox_box_control",
             "parents": [
-                {
-                    "class": "checkbox_control",
-                    "attributes": [
-                        "checked"
-                    ]
-                }
-            ],
+            {
+                "class": "checkbox_control",
+                "attributes": [
+                    "checked"
+                ]
+            }],
             "layer1.tint": "var(checkboxBorderSelected)",
             "layer2.opacity": 1
         },
         {
             "class": "checkbox_box_control",
             "parents": [
-                {
-                    "class": "checkbox_control",
-                    "attributes": [
-                        "disabled"
-                    ]
-                }
-            ],
+            {
+                "class": "checkbox_control",
+                "attributes": [
+                    "disabled"
+                ]
+            }],
             "layer2.texture": "Theme - Merge/checkbox_disabled.png",
             "layer2.tint": "var(checkbox-disabled)",
             "layer2.opacity": 1
@@ -683,13 +677,12 @@
         {
             "class": "checkbox_box_control",
             "parents": [
-                {
-                    "class": "radio_button_list_control"
-                },
-                {
-                    "class": "checkbox_control"
-                }
-            ],
+            {
+                "class": "radio_button_list_control"
+            },
+            {
+                "class": "checkbox_control"
+            }],
             "content_margin": [
                 13,
                 13,
@@ -709,31 +702,29 @@
         {
             "class": "checkbox_box_control",
             "parents": [
-                {
-                    "class": "radio_button_list_control"
-                },
-                {
-                    "class": "checkbox_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "radio_button_list_control"
+            },
+            {
+                "class": "checkbox_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer1.tint": "var(radio_border-selected)"
         },
         {
             "class": "checkbox_box_control",
             "parents": [
-                {
-                    "class": "radio_button_list_control"
-                },
-                {
-                    "class": "checkbox_control",
-                    "attributes": [
-                        "checked"
-                    ]
-                }
-            ],
+            {
+                "class": "radio_button_list_control"
+            },
+            {
+                "class": "checkbox_control",
+                "attributes": [
+                    "checked"
+                ]
+            }],
             "layer1.tint": "var(radio_border-selected)",
             "layer2.opacity": 1
         },
@@ -855,10 +846,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "overlay_control"
-                }
-            ],
+            {
+                "class": "overlay_control"
+            }],
             "layer0.opacity": 0,
             "content_margin": [
                 4,
@@ -870,19 +860,17 @@
         {
             "class": "scroll_track_control",
             "parents": [
-                {
-                    "class": "overlay_control"
-                }
-            ],
+            {
+                "class": "overlay_control"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_bar.png"
         },
         {
             "class": "puck_control",
             "parents": [
-                {
-                    "class": "overlay_control"
-                }
-            ],
+            {
+                "class": "overlay_control"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_puck.png"
         },
         {
@@ -907,10 +895,9 @@
         {
             "class": "button_control",
             "parents": [
-                {
-                    "class": "dialog"
-                }
-            ],
+            {
+                "class": "dialog"
+            }],
             "layer1.tint": "var(dialogButtonBg)"
         },
         {
@@ -941,20 +928,18 @@
         {
             "class": "text_line_control",
             "parents": [
-                {
-                    "class": "overlay_control"
-                }
-            ],
+            {
+                "class": "overlay_control"
+            }],
             "font.face": "system",
             "font.size": "var(font_size_lg)"
         },
         {
             "class": "text_line_control",
             "parents": [
-                {
-                    "class": "switch_project_window"
-                }
-            ],
+            {
+                "class": "switch_project_window"
+            }],
             "font.face": "system",
             "font.size": "var(font_size_lg)"
         },
@@ -1001,10 +986,9 @@
         {
             "class": "quick_panel_label",
             "parents": [
-                {
-                    "class": "mini_quick_panel_row"
-                }
-            ],
+            {
+                "class": "mini_quick_panel_row"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size_lg)"
         },
@@ -1074,8 +1058,8 @@
         {
             "class": "info_area",
             "layer0.texture": "Theme - Merge/button.png",
-            "layer0.tint": "var(accentLighter)",
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(background)",
+            "layer0.opacity": 1.0,
             "layer0.inner_margin": 4,
             "content_margin": [
                 36,
@@ -1090,21 +1074,36 @@
                 27
             ]
         },
+        // {
+        //     "class": "info_area",
+        //     "attributes": [
+        //         "hover"
+        //     ],
+        //     "layer0.opacity": 1.0,
+        //     "layer0.tint": "var(accentLight)"
+        // },
         {
-            "class": "info_area",
-            "attributes": [
-                "hover"
-            ],
-            "layer0.opacity": 1,
-            "layer0.tint": "var(accentLighter)"
+            "class": "label_control",
+            "parents": [
+            {
+                "class": "info_area"
+            }],
+            "shadow_color": "var(infoShadow)",
+            "shadow_offset": [
+                0,
+                1
+            ]
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "info_area"
-                }
-            ],
+            {
+                "class": "info_area",
+                "attributes": [
+                    "hover"
+                ]
+            }],
+            "fg": "var(colorAccent)",
             "shadow_color": "var(infoShadow)",
             "shadow_offset": [
                 0,
@@ -1118,10 +1117,9 @@
         {
             "class": "failed_label",
             "parents": [
-                {
-                    "class": "info_area"
-                }
-            ],
+            {
+                "class": "info_area"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "color": "var(failedLabelFg)",
@@ -1130,10 +1128,9 @@
         {
             "class": "progress_bar_control",
             "parents": [
-                {
-                    "class": "info_area"
-                }
-            ],
+            {
+                "class": "info_area"
+            }],
             "layer0.texture": "Theme - Merge/progress_bar_bottom.png",
             "layer0.inner_margin": [
                 2,
@@ -1147,10 +1144,9 @@
         {
             "class": "progress_gauge_control",
             "parents": [
-                {
-                    "class": "info_area"
-                }
-            ],
+            {
+                "class": "info_area"
+            }],
             "layer0.texture": "Theme - Merge/progress_bar_bottom.png",
             "layer0.inner_margin": [
                 2,
@@ -1169,21 +1165,24 @@
             "class": "git_output_button",
             "layer0.texture": "Theme - Merge/icon_output_border.png",
             "layer0.tint": "var(colorAccent)",
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 1.0,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
             "layer1.texture": "Theme - Merge/icon_output_prompt.png",
             "layer1.tint": "var(output_fg)",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
             "layer2.texture": "Theme - Merge/icon_output_none.png",
             "layer2.tint": "var(output_fg)",
-            "layer2.opacity": {
+            "layer2.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1220,17 +1219,20 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer2.opacity": {
+            "layer2.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1239,14 +1241,16 @@
         {
             "class": "toggle_diverged_banner_button",
             "layer0.texture": "Theme - Merge/icon_diverged_exclamation.png",
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
             "layer0.tint": "var(diverged_icon_fg)",
             "layer1.texture": "Theme - Merge/icon_diverged_filled.png",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1261,14 +1265,16 @@
         },
         {
             "class": "toggle_diverged_banner_button hide",
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.4,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
             "layer0.tint": "var(foreground)",
             "layer1.texture": "Theme - Merge/icon_diverged_border.png",
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.4,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1280,12 +1286,14 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1296,12 +1304,14 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -1310,19 +1320,17 @@
         {
             "class": "button_control",
             "parents": [
-                {
-                    "class": "header"
-                }
-            ],
+            {
+                "class": "header"
+            }],
             "layer1.tint": "var(headerButtonBg)"
         },
         {
             "class": "button_control_right",
             "parents": [
-                {
-                    "class": "header"
-                }
-            ],
+            {
+                "class": "header"
+            }],
             "layer3.tint": "var(headerBg)",
             "layer3.opacity": 0.35
         },
@@ -1389,13 +1397,12 @@
         {
             "class": "icon_side_bar",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)",
             "layer0.tint": "var(colorAccent)",
         },
@@ -1412,13 +1419,12 @@
         {
             "class": "icon_table_of_contents",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1434,13 +1440,12 @@
         {
             "class": "icon_back",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1456,13 +1461,12 @@
         {
             "class": "icon_forward",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1478,13 +1482,12 @@
         {
             "class": "icon_stash",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1500,13 +1503,12 @@
         {
             "class": "icon_pop_stash",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1522,13 +1524,12 @@
         {
             "class": "icon_search",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1544,13 +1545,12 @@
         {
             "class": "icon_more",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1566,13 +1566,12 @@
         {
             "class": "icon_pull",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1588,13 +1587,12 @@
         {
             "class": "icon_push",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1610,13 +1608,12 @@
         {
             "class": "icon_options_dropdown",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(icon_button_opacity-hover)"
         },
         {
@@ -1697,10 +1694,9 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "diverged_container"
-                }
-            ],
+            {
+                "class": "diverged_container"
+            }],
             "fg": "var(diverged_button_fg)",
             "shadow_color": "var(diverged_button_shadow)",
             "shadow_offset": [
@@ -1711,10 +1707,9 @@
         {
             "class": "button_control",
             "parents": [
-                {
-                    "class": "diverged_container"
-                }
-            ],
+            {
+                "class": "diverged_container"
+            }],
             "layer1.tint": "var(diverged_button_bg)"
         },
         {
@@ -1746,27 +1741,25 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "highlighted"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "highlighted"
+                ]
+            }],
             "fg": "var(highlighted_button_light_fg)",
             "shadow_color": "var(highlighted_button_shadow)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "highlighted",
-                        "dark"
-                    ]
-                }
-            ],
+            {
+                "class": "button_control",
+                "attributes": [
+                    "highlighted",
+                    "dark"
+                ]
+            }],
             "fg": "var(highlighted_button_dark_fg)"
         },
         {
@@ -1792,10 +1785,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "settings": [
                 "overlay_scroll_bars"
             ],
@@ -1805,28 +1797,25 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "layer0.opacity": 0
         },
         {
             "class": "scroll_track_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_bar.png"
         },
         {
             "class": "puck_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_puck.png"
         },
         {
@@ -2002,13 +1991,12 @@
         {
             "class": "icon_visible",
             "parents": [
-                {
-                    "class": "side_bar_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "side_bar_container",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(iconButtonOpacity)"
         },
         {
@@ -2062,13 +2050,12 @@
         {
             "class": "icon_section_actions",
             "parents": [
-                {
-                    "class": "side_bar_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "side_bar_container",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": "var(iconButtonOpacity)"
         },
         {
@@ -2156,28 +2143,25 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "commit_table_container"
-                }
-            ],
+            {
+                "class": "commit_table_container"
+            }],
             "layer0.opacity": 0
         },
         {
             "class": "scroll_track_control",
             "parents": [
-                {
-                    "class": "commit_table_container"
-                }
-            ],
+            {
+                "class": "commit_table_container"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_bar.png"
         },
         {
             "class": "puck_control",
             "parents": [
-                {
-                    "class": "commit_table_container"
-                }
-            ],
+            {
+                "class": "commit_table_container"
+            }],
             "layer0.texture": "Theme - Merge/light_scroll_puck.png"
         },
         {
@@ -2202,25 +2186,23 @@
         {
             "class": "commit_summary_control",
             "parents": [
-                {
-                    "class": "commit_table_row",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "commit_table_row",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.opacity": 1
         },
         {
             "class": "commit_summary_control",
             "parents": [
-                {
-                    "class": "commit_table_row",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "commit_table_row",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "layer0.opacity": 1
         },
         {
@@ -2236,10 +2218,9 @@
         {
             "class": "index_files_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "color": "var(commitSummaryFgPrimary)"
@@ -2247,10 +2228,9 @@
         {
             "class": "index_action_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.italic": true,
@@ -2259,10 +2239,9 @@
         {
             "class": "message_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.bold": false,
@@ -2278,10 +2257,9 @@
         {
             "class": "author_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.italic": true,
@@ -2290,10 +2268,9 @@
         {
             "class": "time_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.italic": true,
@@ -2302,10 +2279,9 @@
         {
             "class": "commit_file_name_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.size": "var(font_size)",
             "font.italic": true,
             "color": "var(commitSummaryFgPrimary)",
@@ -2314,10 +2290,9 @@
         {
             "class": "commit_file_path_label",
             "parents": [
-                {
-                    "class": "commit_summary_control"
-                }
-            ],
+            {
+                "class": "commit_summary_control"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.italic": true,
@@ -2420,7 +2395,8 @@
         },
         {
             "class": "searching",
-            "layer0.texture": {
+            "layer0.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_00.png",
                     "Theme - Merge/loading_00.png",
@@ -2452,7 +2428,8 @@
             },
             "layer0.opacity": 1,
             "layer0.tint": "var(loadingBall1)",
-            "layer1.texture": {
+            "layer1.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_13.png",
                     "Theme - Merge/loading_12.png",
@@ -2484,7 +2461,8 @@
             },
             "layer1.opacity": 1,
             "layer1.tint": "var(loadingBall2)",
-            "layer2.texture": {
+            "layer2.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_01.png",
                     "Theme - Merge/loading_02.png",
@@ -2580,10 +2558,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "content_margin": [
                 0,
                 4,
@@ -2594,10 +2571,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "side_bar_container"
-                }
-            ],
+            {
+                "class": "side_bar_container"
+            }],
             "settings": [
                 "overlay_scroll_bars"
             ],
@@ -2606,10 +2582,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "details_panel"
-                }
-            ],
+            {
+                "class": "details_panel"
+            }],
             "settings": [
                 "overlay_scroll_bars"
             ]
@@ -2617,10 +2592,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "details_panel"
-                }
-            ],
+            {
+                "class": "details_panel"
+            }],
             "settings": [
                 "!overlay_scroll_bars"
             ],
@@ -2636,10 +2610,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "commit_dialog_section_container"
-                }
-            ],
+            {
+                "class": "commit_dialog_section_container"
+            }],
             "content_margin": [
                 4,
                 0,
@@ -2650,10 +2623,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "commit_dialog_summary_container"
-                }
-            ],
+            {
+                "class": "commit_dialog_summary_container"
+            }],
             "content_margin": [
                 4,
                 0,
@@ -2682,10 +2654,9 @@
         {
             "class": "scroll_corner_control",
             "parents": [
-                {
-                    "class": "details_panel"
-                }
-            ],
+            {
+                "class": "details_panel"
+            }],
             "settings": [
                 "!overlay_scroll_bars"
             ],
@@ -2706,13 +2677,12 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "details_panel"
-                },
-                {
-                    "class": "diff"
-                }
-            ],
+            {
+                "class": "details_panel"
+            },
+            {
+                "class": "diff"
+            }],
             "layer0.opacity": 0
         },
         {
@@ -2727,10 +2697,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "commit_dialog_header"
-                }
-            ],
+            {
+                "class": "commit_dialog_header"
+            }],
             "settings": [
                 "!overlay_scroll_bars"
             ],
@@ -2744,10 +2713,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "commit_dialog_header"
-                }
-            ],
+            {
+                "class": "commit_dialog_header"
+            }],
             "settings": [
                 "overlay_scroll_bars"
             ],
@@ -2761,10 +2729,9 @@
         {
             "class": "scroll_area_control",
             "parents": [
-                {
-                    "class": "commit_dialog_header"
-                }
-            ]
+            {
+                "class": "commit_dialog_header"
+            }]
         },
         {
             "class": "commit_message_container",
@@ -2874,7 +2841,8 @@
         },
         {
             "class": "loading",
-            "layer0.texture": {
+            "layer0.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_00.png",
                     "Theme - Merge/loading_00.png",
@@ -2906,7 +2874,8 @@
             },
             "layer0.opacity": 1,
             "layer0.tint": "var(loadingBall1)",
-            "layer1.texture": {
+            "layer1.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_13.png",
                     "Theme - Merge/loading_12.png",
@@ -2938,7 +2907,8 @@
             },
             "layer1.opacity": 1,
             "layer1.tint": "var(loadingBall2)",
-            "layer2.texture": {
+            "layer2.texture":
+            {
                 "keyframes": [
                     "Theme - Merge/loading_01.png",
                     "Theme - Merge/loading_02.png",
@@ -3031,10 +3001,9 @@
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "expand_all_diff_control"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control"
+            }],
             "spacing": 4,
             "content_margin": [
                 4,
@@ -3046,19 +3015,17 @@
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "expand_all_diff_control detail"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control detail"
+            }],
             "layer0.tint": "var(detailPanelBg)"
         },
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "expand_all_diff_control working"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control working"
+            }],
             "layer0.tint": "var(detailPanelBg)"
         },
         {
@@ -3067,12 +3034,14 @@
             "layer0.draw_center": false,
             "layer0.tint": "var(buttonBg)",
             "layer0.inner_margin": 4,
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.4,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.2,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3083,12 +3052,14 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3097,28 +3068,25 @@
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "expand_all_diff_control staged"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control staged"
+            }],
             "layer0.tint": "var(detailPanelBg)"
         },
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "expand_all_diff_control untracked"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control untracked"
+            }],
             "layer0.tint": "var(untrackedHeaderBg)"
         },
         {
             "class": "file_diff_header collapsible",
             "parents": [
-                {
-                    "class": "expand_all_diff_control untracked"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control untracked"
+            }],
             "attributes": [
                 "hover"
             ],
@@ -3127,19 +3095,17 @@
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "file_diff_control unmerged"
-                }
-            ],
+            {
+                "class": "file_diff_control unmerged"
+            }],
             "layer0.tint": "var(unmergedHeaderBg)"
         },
         {
             "class": "file_diff_header collapsible",
             "parents": [
-                {
-                    "class": "file_diff_control unmerged"
-                }
-            ],
+            {
+                "class": "file_diff_control unmerged"
+            }],
             "attributes": [
                 "hover"
             ],
@@ -3148,10 +3114,9 @@
         {
             "class": "file_diff_header",
             "parents": [
-                {
-                    "class": "file_diff_control untracked"
-                }
-            ],
+            {
+                "class": "file_diff_control untracked"
+            }],
             "layer0.tint": "var(untrackedHeaderBg)",
             "content_margin": [
                 20,
@@ -3163,10 +3128,9 @@
         {
             "class": "file_diff_header collapsible",
             "parents": [
-                {
-                    "class": "file_diff_control untracked"
-                }
-            ],
+            {
+                "class": "file_diff_control untracked"
+            }],
             "attributes": [
                 "hover"
             ],
@@ -3310,10 +3274,9 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_header"
-                }
-            ],
+            {
+                "class": "file_diff_header"
+            }],
             "shadow_color": "var(file_diff_shadow)",
             "shadow_offset": [
                 0,
@@ -3323,40 +3286,37 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_header"
-                },
-                {
-                    "class": "button_control"
-                }
-            ],
+            {
+                "class": "file_diff_header"
+            },
+            {
+                "class": "button_control"
+            }],
             "shadow_color": "var(buttonShadow)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_header"
-                },
-                {
-                    "class": "button_control",
-                    "attributes": [
-                        "confirm"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_header"
+            },
+            {
+                "class": "button_control",
+                "attributes": [
+                    "confirm"
+                ]
+            }],
             "shadow_color": "var(hazard_button_shadow)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "expand_all_diff_control"
-                },
-                {
-                    "class": "file_meta"
-                }
-            ],
+            {
+                "class": "expand_all_diff_control"
+            },
+            {
+                "class": "file_meta"
+            }],
             "fg": "var(foreground)"
         },
         {
@@ -3374,7 +3334,8 @@
         {
             "class": "disclosure_button_control",
             "layer0.texture": "Theme - Merge/disclosure_unexpanded.png",
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.3,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3397,7 +3358,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3406,14 +3368,14 @@
         {
             "class": "disclosure_button_control",
             "parents": [
-                {
-                    "class": "file_diff_header",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
-            "layer0.opacity": {
+            {
+                "class": "file_diff_header",
+                "attributes": [
+                    "hover"
+                ]
+            }],
+            "layer0.opacity":
+            {
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3422,10 +3384,9 @@
         {
             "class": "disclosure_button_control",
             "parents": [
-                {
-                    "class": "close"
-                }
-            ],
+            {
+                "class": "close"
+            }],
             "layer0.texture": "Theme - Merge/icon_cancel.png",
             "content_margin": [
                 9,
@@ -3504,13 +3465,12 @@
         {
             "class": "hunk_button",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container",
-                    "attributes": [
-                        "!hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container",
+                "attributes": [
+                    "!hover"
+                ]
+            }],
             "attributes": [
                 "!confirm"
             ],
@@ -3520,41 +3480,39 @@
         {
             "class": "hunk_button",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer1.opacity": 0.6
         },
         {
             "class": "hunk_button",
             "parents": [
-                {
-                    "class": "file_diff_hunk_header",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_header",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "layer1.opacity": 0.6
         },
         {
             "class": "hunk_button",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "attributes": [
                 "hover"
             ],
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3563,17 +3521,17 @@
         {
             "class": "hunk_button",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "attributes": [
                 "pressed"
             ],
-            "layer1.opacity": {
+            "layer1.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -3582,16 +3540,15 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container"
-                },
-                {
-                    "class": "hunk_button",
-                    "attributes": [
-                        "!confirm"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container"
+            },
+            {
+                "class": "hunk_button",
+                "attributes": [
+                    "!confirm"
+                ]
+            }],
             "fg": "color(var(hunk_button_fg) a(0))",
             "shadow_offset": [
                 0,
@@ -3601,19 +3558,18 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_hunk_container",
-                    "attributes": [
-                        "hover"
-                    ]
-                },
-                {
-                    "class": "hunk_button",
-                    "attributes": [
-                        "!confirm"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_container",
+                "attributes": [
+                    "hover"
+                ]
+            },
+            {
+                "class": "hunk_button",
+                "attributes": [
+                    "!confirm"
+                ]
+            }],
             "fg": "var(hunk_button_fg)",
             "shadow_color": "var(hunk_button_shadow)",
             "shadow_offset": [
@@ -3624,19 +3580,18 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_diff_hunk_header",
-                    "attributes": [
-                        "selected"
-                    ]
-                },
-                {
-                    "class": "hunk_button",
-                    "attributes": [
-                        "!confirm"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_hunk_header",
+                "attributes": [
+                    "selected"
+                ]
+            },
+            {
+                "class": "hunk_button",
+                "attributes": [
+                    "!confirm"
+                ]
+            }],
             "fg": "var(hunk_button_fg)",
             "shadow_color": "var(hunk_button_shadow)",
             "shadow_offset": [
@@ -3678,13 +3633,12 @@
         {
             "class": "modified_badge",
             "parents": [
-                {
-                    "class": "file_diff_header",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_header",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.tint": "var(fileHeaderBgHover)"
         },
         {
@@ -3694,13 +3648,12 @@
         {
             "class": "unmerged_badge",
             "parents": [
-                {
-                    "class": "file_diff_header",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_header",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.tint": "var(unmergedHeaderBgHover)"
         },
         {
@@ -3714,85 +3667,76 @@
         {
             "class": "staged_badge",
             "parents": [
-                {
-                    "class": "file_diff_header"
-                }
-            ],
+            {
+                "class": "file_diff_header"
+            }],
             "layer0.tint": "var(fileHeaderBg)"
         },
         {
             "class": "staged_badge",
             "parents": [
-                {
-                    "class": "file_diff_header",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "file_diff_header",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "layer0.tint": "var(fileHeaderBgHover)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "file_badge"
-                }
-            ],
+            {
+                "class": "file_badge"
+            }],
             "font.bold": true
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "modified_badge"
-                }
-            ],
+            {
+                "class": "modified_badge"
+            }],
             "fg": "var(file_badge_modified_fg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "unmerged_badge"
-                }
-            ],
+            {
+                "class": "unmerged_badge"
+            }],
             "fg": "var(file_badge_unmerged_fg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "untracked_badge"
-                }
-            ],
+            {
+                "class": "untracked_badge"
+            }],
             "fg": "var(file_badge_untracked_fg)"
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "staged_badge"
-                }
-            ],
+            {
+                "class": "staged_badge"
+            }],
             "fg": "var(file_badge_staged_fg)"
         },
         {
             "class": "icon_deleted",
             "parents": [
-                {
-                    "class": "modified_badge"
-                }
-            ],
+            {
+                "class": "modified_badge"
+            }],
             "layer0.tint": "var(file_badge_modified_fg)"
         },
         {
             "class": "icon_deleted",
             "parents": [
-                {
-                    "class": "staged_badge"
-                }
-            ],
+            {
+                "class": "staged_badge"
+            }],
             "layer0.tint": "var(file_badge_staged_fg)"
         },
         {
@@ -3803,10 +3747,9 @@
         {
             "class": "dialog",
             "parents": [
-                {
-                    "class": "welcome_overlay"
-                }
-            ],
+            {
+                "class": "welcome_overlay"
+            }],
             "layer0.opacity": 0
         },
         {
@@ -3887,25 +3830,23 @@
             "class": "commit_metadata_container",
             "layer0.opacity": 1,
             "parents": [
-                {
-                    "class": "commit_table_row",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ]
+            {
+                "class": "commit_table_row",
+                "attributes": [
+                    "selected"
+                ]
+            }]
         },
         {
             "class": "commit_metadata_container",
             "layer0.opacity": 0.2,
             "parents": [
-                {
-                    "class": "commit_table_row",
-                    "attributes": [
-                        "!selected"
-                    ]
-                }
-            ],
+            {
+                "class": "commit_table_row",
+                "attributes": [
+                    "!selected"
+                ]
+            }],
             "attributes": [
                 "hover"
             ]
@@ -4007,10 +3948,9 @@
         {
             "class": "panel_control",
             "parents": [
-                {
-                    "class": "switch_project_window"
-                }
-            ],
+            {
+                "class": "switch_project_window"
+            }],
             "layer0.opacity": 1,
             "layer0.tint": "var(switchRepoBg)",
             "content_margin": 2
@@ -4018,10 +3958,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "switch_project_window"
-                }
-            ],
+            {
+                "class": "switch_project_window"
+            }],
             "layer0.tint": "var(switchRepoBg)",
             "tint_index": -1
         },
@@ -4165,19 +4104,17 @@
         {
             "class": "hint_control",
             "parents": [
-                {
-                    "class": "error_output"
-                }
-            ],
+            {
+                "class": "error_output"
+            }],
             "layer0.tint": "var(error_hint_bg)"
         },
         {
             "class": "hint_control bottom",
             "parents": [
-                {
-                    "class": "error_output"
-                }
-            ],
+            {
+                "class": "error_output"
+            }],
             "layer1.texture": "Theme - Merge/hint_bottom_stripe.png",
             "layer1.inner_margin": [
                 4,
@@ -4198,19 +4135,17 @@
         {
             "class": "hint_stem",
             "parents": [
-                {
-                    "class": "error_output"
-                }
-            ],
+            {
+                "class": "error_output"
+            }],
             "layer0.tint": "var(error_hint_accent)"
         },
         {
             "class": "hint_label",
             "parents": [
-                {
-                    "class": "error_output"
-                }
-            ],
+            {
+                "class": "error_output"
+            }],
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "fg": "var(error_hint_fg)"
@@ -4218,10 +4153,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "tree_details"
-                }
-            ],
+            {
+                "class": "tree_details"
+            }],
             "content_margin": [
                 4,
                 4,
@@ -4232,10 +4166,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "tree_list"
-                }
-            ],
+            {
+                "class": "tree_list"
+            }],
             "layer0.tint": "color(var(commitListBg) a(0.5))",
             "layer0.opacity": 1
         },
@@ -4286,7 +4219,8 @@
         {
             "class": "use_hunk_button",
             "layer0.tint": "var(use_hunk_button_fg)",
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4309,7 +4243,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": {
+            "layer0.opacity":
+            {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4356,10 +4291,9 @@
         {
             "class": "scroll_bar_control",
             "parents": [
-                {
-                    "class": "popup_control auto_complete_popup"
-                }
-            ],
+            {
+                "class": "popup_control auto_complete_popup"
+            }],
             "tint_modifier": [
                 0,
                 0,
@@ -4373,10 +4307,9 @@
                 "dark"
             ],
             "parents": [
-                {
-                    "class": "popup_control auto_complete_popup"
-                }
-            ],
+            {
+                "class": "popup_control auto_complete_popup"
+            }],
             "tint_modifier": [
                 255,
                 255,
@@ -4396,13 +4329,12 @@
         {
             "class": "table_row",
             "parents": [
-                {
-                    "class": "auto_complete",
-                    "attributes": [
-                        "file_light"
-                    ]
-                }
-            ],
+            {
+                "class": "auto_complete",
+                "attributes": [
+                    "file_light"
+                ]
+            }],
             "layer0.tint": [
                 0,
                 0,
@@ -4441,13 +4373,12 @@
         {
             "class": "auto_complete_label",
             "parents": [
-                {
-                    "class": "auto_complete",
-                    "attributes": [
-                        "file_light"
-                    ]
-                }
-            ],
+            {
+                "class": "auto_complete",
+                "attributes": [
+                    "file_light"
+                ]
+            }],
             "fg": [
                 0,
                 0,
@@ -4497,13 +4428,12 @@
         {
             "class": "table_row",
             "parents": [
-                {
-                    "class": "auto_complete",
-                    "attributes": [
-                        "file_light"
-                    ]
-                }
-            ],
+            {
+                "class": "auto_complete",
+                "attributes": [
+                    "file_light"
+                ]
+            }],
             "attributes": [
                 "selected"
             ],
@@ -4512,10 +4442,9 @@
         {
             "class": "progress_gauge_control",
             "parents": [
-                {
-                    "class": "clone_area"
-                }
-            ],
+            {
+                "class": "clone_area"
+            }],
             "content_margin": [
                 0,
                 12
@@ -4584,7 +4513,8 @@
                 16,
                 0
             ],
-            "layer3.opacity": {
+            "layer3.opacity":
+            {
                 "target": 0.2,
                 "speed": 2,
                 "interpolation": "smoothstep"
@@ -4634,25 +4564,23 @@
         {
             "class": "tab_label",
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "fg": "var(tabLabelColorHover)"
         },
         {
             "class": "tab_label",
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "selected"
+                ]
+            }],
             "fg": "var(tabLabelColorSelected)"
         },
         {
@@ -4669,14 +4597,14 @@
         {
             "class": "tab_close_button",
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "!selected"
-                    ]
-                }
-            ],
-            "layer0.opacity": {
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "!selected"
+                ]
+            }],
+            "layer0.opacity":
+            {
                 "target": 0.3,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4685,14 +4613,14 @@
         {
             "class": "tab_close_button",
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
-            "layer0.opacity": {
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "selected"
+                ]
+            }],
+            "layer0.opacity":
+            {
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4704,14 +4632,14 @@
                 "hover"
             ],
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "!selected"
-                    ]
-                }
-            ],
-            "layer0.opacity": {
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "!selected"
+                ]
+            }],
+            "layer0.opacity":
+            {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4723,14 +4651,14 @@
                 "hover"
             ],
             "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
-            "layer0.opacity": {
+            {
+                "class": "tab_control",
+                "attributes": [
+                    "selected"
+                ]
+            }],
+            "layer0.opacity":
+            {
                 "target": 0.8,
                 "speed": 4,
                 "interpolation": "smoothstep"
@@ -4758,23 +4686,21 @@
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "new_tab_button"
-                }
-            ],
+            {
+                "class": "new_tab_button"
+            }],
             "fg": "var(colorAccent)",
             "font.bold": true
         },
         {
             "class": "label_control",
             "parents": [
-                {
-                    "class": "new_tab_button",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
+            {
+                "class": "new_tab_button",
+                "attributes": [
+                    "hover"
+                ]
+            }],
             "fg": "var(labelColor)",
             "font.bold": true
         }
