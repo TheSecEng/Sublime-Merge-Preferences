@@ -95,7 +95,7 @@
         "detailPanelBg": "var(background)",
         "fieldNameFg": "var(foreground)",
         "authorFg": "color(var(--foreground) a(0.4))",
-        "terminatorFg": "var(accentLighter)",
+        "terminatorFg": "var(colorAccent)",
         "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
         "headAnnFg": "var(darkGray)",
@@ -2813,7 +2813,7 @@
         {
             "class": "terminator",
             "layer0.texture": "Theme - Merge/terminator.png",
-            "layer0.tint": "var(terminatorFg)",
+            "layer0.tint": "color(var(terminatorFg) a(0.25))",
             "layer0.opacity": 1,
             "content_margin": [
                 16,
