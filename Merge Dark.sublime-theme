@@ -134,8 +134,8 @@
         "unmergedHeaderBgHover": "color(var(background) l(+ 5%))",
         "recentIconFg": "var(yellow)",
         "recentIconBg": "transparent",
-        "untrackedHeaderBg": "color(var(darkGrayMedium) s(- 5%) l(+ 5%))",
-        "untrackedHeaderBgHover": "color(var(darkGrayMedium) s(- 5%) l(+ 10%))",
+        "untrackedHeaderBg": "var(accentLight)",
+        "untrackedHeaderBgHover": "var(accentLighter)",
         "stagedIconFg": "var(foreground)",
         "renamedFileInserted": "color(var(green) s(30%) l(60%))",
         "renamedFileDeleted": "color(var(red) s(50%) l(65%))",
@@ -188,9 +188,9 @@
         "fileBadgeModifiedFg": "var(mediumGray)",
         "fileBadgeUnmergedFg": "#2e1d07",
         "fileBadgeUntrackedBg": "var(detailPanelBg)",
-        "fileBadgeUntrackedFg": "var(mediumGray-dark)",
+        "fileBadgeUntrackedFg": "var(accentDark)",
         "fileBadgeStagedBg": "var(fileHeaderBg)",
-        "fileBadgeStagedFg": "var(mediumGray-light)"
+        "fileBadgeStagedFg": "var(accentLightest)"
     },
     "rules": [
         {
