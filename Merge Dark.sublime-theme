@@ -4704,18 +4704,6 @@
             }],
             "fg": "var(colorAccent)",
             "font.bold": true
-        },
-        {
-            "class": "label_control",
-            "parents": [
-            {
-                "class": "new_tab_button",
-                "attributes": [
-                    "hover"
-                ]
-            }],
-            "fg": "var(labelColor)",
-            "font.bold": true
         }
     ]
 }
