@@ -129,8 +129,8 @@
         "deletedHeaderBg": "var(darkRed)",
         "deletedHeaderBgHover": "color(var(darkRed) l(+ 5%))",
         "unmergedIconFg": "color(var(foreground) l(+ 20%))",
-        "unmergedHeaderBg": "var(darkBlue)",
-        "unmergedHeaderBgHover": "color(var(darkBlue) l(+ 5%))",
+        "unmergedHeaderBg": "var(accentLight)",
+        "unmergedHeaderBgHover": "color(var(background) l(+ 5%))",
         "recentIconFg": "var(yellow)",
         "recentIconBg": "transparent",
         "untrackedHeaderBg": "color(var(darkGrayMedium) s(- 5%) l(+ 5%))",
@@ -338,6 +338,7 @@
         {
             "class": "button_control_left",
             "layer1.texture": "Theme - Merge/button_left.png",
+            "layer1.tint": "var(buttonBg)",
             "min_size": [
                 70,
                 15
@@ -346,6 +347,7 @@
         {
             "class": "button_control_right",
             "layer1.texture": "Theme - Merge/button_right.png",
+            "layer1.tint": "var(buttonBg)",
             "layer1.inner_margin": [
                 2,
                 2,
