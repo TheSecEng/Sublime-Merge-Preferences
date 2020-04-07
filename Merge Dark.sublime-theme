@@ -29,15 +29,14 @@
         "accentLight": "color(var(background) l(+ 2%))",
         "accentLighter": "color(var(background) l(+ 4%))",
         "accentLightest": "color(var(background) l(+ 10%))",
-        "teal": "hsl(180, 40%, 65%)",
+
         "magenta": "hsl(330, 70%, 65%)",
         "darkRed": "color(var(red) s(25%) l(35%))",
         "darkCyan": "color(var(cyan) s(25%) l(35%))",
         "darkBlue": "color(var(blue) s(25%) l(35%))",
         "mediumGray": "hsl(210, 10%, 50%)",
         "darkGrayLightest": "hsl(210, 10%, 19%)",
-        "darkGrayLight": "hsl(210, 10%, 16%)",
-        "darkGrayMedium": "hsl(210, 10%, 13%)",
+
         "darkGray": "hsl(210, 10%, 10%)",
         "labelColor": "var(foreground)",
         // Section: Tab's
@@ -46,7 +45,8 @@
         "tabLabelColorSelected": "color(var(colorAccent) a(1.0))",
         // - End Section
         "helpLabelColor": "color(var(foreground) a(0.6))",
-        "branchStatsLabelBg": "color(var(accentLightest) a(0.75))",
+        "branchStatsLabelBg": "var(accentLight)",
+        "branchStatLabelFg": "color(var(colorAccent) a(0.6))",
         "titleBarStyle": "dark",
         "titleBarBg": "var(accentDarkest)",
         // Section: Titlebar Background
@@ -98,18 +98,20 @@
         "terminatorFg": "var(colorAccent)",
         "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
-        "headAnnFg": "var(darkGray)",
+        "headAnnFg": "color(var(--foreground) l(5%))",
         "headAnnBg": "var(purple)",
-        "branchAnnFg": "var(darkGray)",
+        "branchAnnFg": "color(var(--foreground) l(5%))",
         "branchAnnBg": "var(blue)",
-        "remoteAnnFg": "var(darkGray)",
+        "remoteAnnFg": "color(var(--foreground) l(5%))",
         "remoteAnnBg": "var(cyan)",
-        "tagAnnFg": "var(darkGray)",
+        "tagAnnFg": "var(foreground)",
         "tagAnnBg": "var(yellow)",
-        "stashAnnFg": "var(darkGray)",
+        "stashAnnFg": "color(var(--foreground) l(5%))",
         "stashAnnBg": "var(orange)",
         "fileAnnFg": "var(foreground)",
         "fileAnnBg": "color(var(accentLightest) a(0.75))",
+        "fileAnnAheadFg": "color(var(green) a(0.75))",
+        "fileAnnBehindFg": "color(var(red) a(0.75))",
         "submoduleAnnBg": "var(darkGrayLightest)",
         "submoduleLightAnnBg": "var(darkGrayLightest)",
         "insertedAnnBg": "color(var(cyan) a(0.50))",
@@ -176,10 +178,10 @@
         "quickPanelPathFgSelected": "var(foreground)",
         "quickPanelPathFgSelectedMatch": "var(foreground)",
         "switchRepoBg": "var(background)",
-        "failedLabelFg": "var(darkGray)",
+        "failedLabelFg": "var(foreground)",
         "loadingBall1": "var(mediumGray)",
         "loadingBall2": "var(blue)",
-        "previewFg": "white",
+        "previewFg": "var(foreground)",
         "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
         "consoleBorder": "var(accentDarkest)",
         "hazardButtonBg": "var(red)",
@@ -1897,7 +1899,7 @@
             "class": "branch_stat",
             "layer0.texture": "Theme - Merge/annotation.png",
             "layer0.tint": "var(branchStatsLabelBg)",
-            "layer0.opacity": 1,
+            "layer0.opacity": 0,
             "layer0.inner_margin": 4,
             "content_margin": [
                 4,
@@ -1935,23 +1937,36 @@
             "spacing": 1
         },
         {
-            "class": "submodule_stat",
-            "font.face": "var(font_face)",
-            "font.size": "var(font_size)",
-            "color": "var(submodule_stat_fg)",
-            "background_color": "var(submodule_stat_bg)"
-        },
-        {
             "class": "branch_stat_label",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "color": "color(var(fileAnnFg) a(0.8))"
+            "color": "color(var(branchStatLabelFg) a(0.8))"
+        },
+        {
+            "class": "branch_stat_label",
+            "parents": [{"class": "branch_stat", "attributes": ["hover"]}],
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "color(var(branchStatLabelFg) a(1.0))"
         },
         {
             "class": "icon_behind",
             "layer0.texture": "Theme - Merge/icon_behind.png",
-            "layer0.tint": "var(fileAnnFg)",
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(fileAnnBehindFg)",
+            "layer0.opacity": 1.0,
+            "content_margin": [
+                4,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "class": "icon_behind",
+            "layer0.texture": "Theme - Merge/icon_behind.png",
+            "parents": [{"class": "branch_stat", "attributes": ["hover"]}],
+            "layer0.tint": "color(var(fileAnnBehindFg) a(1.0))",
+            "layer0.opacity": 1.0,
             "content_margin": [
                 4,
                 5,
@@ -1962,14 +1977,34 @@
         {
             "class": "icon_ahead",
             "layer0.texture": "Theme - Merge/icon_ahead.png",
-            "layer0.tint": "var(fileAnnFg)",
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(fileAnnAheadFg)",
+            "layer0.opacity": 1.0,
             "content_margin": [
                 4,
                 5,
                 5,
                 5
             ]
+        },
+        {
+            "class": "icon_ahead",
+            "layer0.texture": "Theme - Merge/icon_ahead.png",
+            "parents": [{"class": "branch_stat", "attributes": ["hover"]}],
+            "layer0.tint": "color(var(fileAnnAheadFg) a(1.0))",
+            "layer0.opacity": 1.0,
+            "content_margin": [
+                4,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "class": "submodule_stat",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "var(submodule_stat_fg)",
+            "background_color": "var(submodule_stat_bg)"
         },
         {
             "class": "location_bar_branch_row",
@@ -2311,6 +2346,7 @@
             "class": "branch_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "color": "var(branchAnnFg)",
             "background_color": "var(branchAnnBg)"
         },
@@ -2318,6 +2354,7 @@
             "class": "remote_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "color": "var(remoteAnnFg)",
             "background_color": "var(remoteAnnBg)"
         },
@@ -2325,6 +2362,7 @@
             "class": "tag_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "color": "var(tagAnnFg)",
             "background_color": "var(tagAnnBg)"
         },
@@ -2332,6 +2370,7 @@
             "class": "stash_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "color": "var(stashAnnFg)",
             "background_color": "var(stashAnnBg)"
         },
@@ -2339,6 +2378,7 @@
             "class": "file_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "color": "var(fileAnnFg)",
             "background_color": "var(fileAnnBg)"
         },
@@ -2346,6 +2386,7 @@
             "class": "submodule_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "fg": "var(submodule_ann_fg)",
             "background_color": "var(submoduleAnnBg)"
         },
@@ -2353,6 +2394,7 @@
             "class": "submodule_light_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
+            "font.bold": true,
             "fg": "var(submodule_light_ann_fg)",
             "background_color": "var(submoduleAnnBg)"
         },
