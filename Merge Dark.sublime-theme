@@ -2823,6 +2823,19 @@
             ]
         },
         {
+            "class": "terminator",
+            "attributes": ["hover"],
+            "layer0.texture": "Theme - Merge/terminator.png",
+            "layer0.tint": "color(var(terminatorFg) a(0.50))",
+            "layer0.opacity": 1,
+            "content_margin": [
+                16,
+                4,
+                16,
+                4
+            ]
+        },
+        {
             "class": "terminator_container",
             "content_margin": [
                 12,
