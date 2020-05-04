@@ -2338,7 +2338,7 @@
             "class": "head_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(headAnnFg)",
             "background_color": "var(headAnnBg)"
         },
@@ -2346,7 +2346,7 @@
             "class": "branch_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(branchAnnFg)",
             "background_color": "var(branchAnnBg)"
         },
@@ -2354,7 +2354,7 @@
             "class": "remote_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(remoteAnnFg)",
             "background_color": "var(remoteAnnBg)"
         },
@@ -2362,7 +2362,7 @@
             "class": "tag_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(tagAnnFg)",
             "background_color": "var(tagAnnBg)"
         },
@@ -2370,7 +2370,7 @@
             "class": "stash_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(stashAnnFg)",
             "background_color": "var(stashAnnBg)"
         },
@@ -2378,7 +2378,7 @@
             "class": "file_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "color": "var(fileAnnFg)",
             "background_color": "var(fileAnnBg)"
         },
@@ -2386,7 +2386,7 @@
             "class": "submodule_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "fg": "var(submodule_ann_fg)",
             "background_color": "var(submoduleAnnBg)"
         },
@@ -2394,7 +2394,7 @@
             "class": "submodule_light_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "font.bold": true,
+            "font.bold": false,
             "fg": "var(submodule_light_ann_fg)",
             "background_color": "var(submoduleAnnBg)"
         },
