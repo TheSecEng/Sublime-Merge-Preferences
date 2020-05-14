@@ -24,5 +24,3 @@
 ![2020-05-14_13-01-37](https://user-images.githubusercontent.com/32599364/81963469-20e1b880-95e3-11ea-8c21-daaf6f8af4e1.png)
 
 ![2020-05-14_13-01-27](https://user-images.githubusercontent.com/32599364/81963471-20e1b880-95e3-11ea-8eaa-763f1049b065.png)
-
-![2020-05-14_13-00-43](https://user-images.githubusercontent.com/32599364/81963474-217a4f00-95e3-11ea-9b93-fd8b9423bf02.png)
