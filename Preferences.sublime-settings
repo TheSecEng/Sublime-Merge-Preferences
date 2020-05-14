@@ -6,10 +6,11 @@
 	"log_control_tree": true,
     "log_input": false,
     "log_commands": false,
-    "font_face": "Victor Mono",
+    "font_face": "PragmataPro Mono Liga",
     "font_options": [
+        "no_round",
         "gray_antialias",
-        "subpixel_antialias"
+        // "subpixel_antialias"
     ],
 	"caret_style": "solid",
     // "caret_blink_interval": 0.1,
