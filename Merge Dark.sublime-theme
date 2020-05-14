@@ -2,7 +2,10 @@
     "extends": "Merge.sublime-theme",
     "variables":
     {
-        "font_face": "Victor Mono",
+        "font_face": "PragmataPro Mono Liga",
+        "font_size": 13,
+        "font_size_sm": 11,
+        "font_size_lg": 15,
         "cursor": "#ffcc00",
         "transparent": "transparent",
         "foreground": "#dedfe4",
@@ -195,6 +198,7 @@
         "fileBadgeStagedFg": "var(accentLightest)"
     },
     "rules": [
+        // Console Panel Border
         {
             "class": "console_panel",
             "layer0.tint": "var(consoleBorder)",
@@ -1011,10 +1015,14 @@
             "class": "quick_panel_label command",
             "font.italic": true,
         },
+        // Quick Panel
+        // - Right Side Labels (e.g. Build 2009)
         {
             "class": "quick_panel_label hint",
             "color": "color(var(--foreground) a(- 50%))"
         },
+        // Quick Panel
+        // - Right Side Command Labels (e.g. ⌘ + p)
         {
             "class": "quick_panel_label key_binding",
             "color": "color(var(--foreground) a(- 50%))"
@@ -4533,6 +4541,7 @@
                 20
             ]
         },
+        // & Section: Tab Bar
         {
             "class": "tabset_control",
             "layer0.opacity": 1,
@@ -4646,6 +4655,8 @@
             }],
             "fg": "var(tabLabelColorSelected)"
         },
+        // - Tab
+        // -> Close Button Icon/Color
         {
             "class": "tab_close_button",
             "settings": [
@@ -4655,7 +4666,7 @@
             "content_margin": [
                 10,
                 9
-            ]
+            ],
         },
         {
             "class": "tab_close_button",
@@ -4727,6 +4738,8 @@
                 "interpolation": "smoothstep"
             }
         },
+        // - Tab Bar
+        // -> New Repo Button Background
         {
             "class": "new_tab_button",
             "content_margin": 0,
@@ -4746,6 +4759,8 @@
             ],
             "layer3.opacity": 0.2
         },
+        // - Tab Bar
+        // -> New Repo Button Label Color (e.g. +)
         {
             "class": "label_control",
             "parents": [
@@ -4755,5 +4770,6 @@
             "fg": "var(colorAccent)",
             "font.bold": true
         }
+        // End Section
     ]
 }
