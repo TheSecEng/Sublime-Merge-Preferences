@@ -992,7 +992,7 @@
                 "class": "mini_quick_panel_row"
             }],
             "font.face": "var(font_face)",
-            "font.size": "var(font_size_lg)"
+            "font.size": "var(font_size_lg)",
         },
         {
             "class": "quick_panel_path_label",
@@ -1009,8 +1009,15 @@
         },
         {
             "class": "quick_panel_label command",
-            "fg": "var(colorAccent)",
             "font.italic": true,
+        },
+        {
+            "class": "quick_panel_label hint",
+            "color": "color(var(--foreground) a(- 50%))"
+        },
+        {
+            "class": "quick_panel_label key_binding",
+            "color": "color(var(--foreground) a(- 50%))"
         },
         {
             "class": "title_bar",
