@@ -933,7 +933,7 @@
             {
                 "class": "overlay_control"
             }],
-            "font.face": "system",
+            "font.face": "var(font_face)",
             "font.size": "var(font_size_lg)"
         },
         {
@@ -942,7 +942,7 @@
             {
                 "class": "switch_project_window"
             }],
-            "font.face": "system",
+            "font.face": "var(font_face)",
             "font.size": "var(font_size_lg)"
         },
         {
@@ -1009,7 +1009,8 @@
         },
         {
             "class": "quick_panel_label command",
-            "font.italic": true
+            "fg": "var(colorAccent)",
+            "font.italic": true,
         },
         {
             "class": "title_bar",
