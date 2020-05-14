@@ -4495,6 +4495,20 @@
             // - Added
             "layer0.tint": "var(background)"
         },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["hover"],
+            "layer0.tint": "var(preferencesSectionTableRowBg)",
+            "layer0.opacity": 0.5,
+            "content_margin": [0, 16, 0, 0],
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(preferencesSectionTableRowBg)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 16, 0, 0],
+        },
         // - End Section
         {
             "class": "table_row",

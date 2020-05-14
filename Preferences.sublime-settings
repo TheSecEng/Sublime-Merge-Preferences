@@ -12,6 +12,7 @@
         "gray_antialias",
         // "subpixel_antialias"
     ],
+    "font_size": 13,
 	"caret_style": "solid",
     // "caret_blink_interval": 0.1,
     "block_caret": false,
