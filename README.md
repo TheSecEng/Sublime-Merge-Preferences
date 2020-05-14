@@ -1,6 +1,6 @@
 # Sublime Merge Preferences
 
-1. `cd ~/Library/Application\ Support/`
+1. `cd ~/Library/Application\ Support/Sublime Text/`
   
 2. `git@github.com:TheSecEng/Sublime-Merge-Preferences.git .`
   
