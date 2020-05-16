@@ -1,0 +1,7 @@
+{
+    "variables": {
+        "consoleBorder": "var(accentLight)",
+        "font_face": "PragmataPro Mono Liga",
+    },
+    "rules": []
+}
