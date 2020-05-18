@@ -1,0 +1,79 @@
+[
+    // Start
+    {
+        "caption": "New Repository",
+        "command": "prompt_new_repository"
+    },
+    {
+        "caption": "Clone Repository…",
+        "command": "display_clone_page"
+    },
+    {
+        "caption": "Open Repository…",
+        "command": "prompt_open_repository"
+    },
+    {
+        "caption": "Select Repository…",
+        "command": "quick_open_repository"
+    },
+    {
+        "caption": "Switch Repository…",
+        "command": "quick_switch_repository"
+    },
+
+    // Repository
+    {
+        "caption": "Search",
+        "command": "toggle_search"
+    },
+    {
+        "caption": "Stage All Modified\tgit stage -A --modified",
+        "command": "stage_all_modified"
+    },
+    {
+        "caption": "Repository: Edit .gitattributes…",
+        "command": "open_in_editor",
+        "args": {
+            "path": "$working_dir/.gitattributes", "line": "$line", "col": "$col",
+            "default": "# Specify filepatterns you want to assign special attributes.\n\n.git export-ignore\n.gitattributes export-ignore\n.gitignore export-ignore\n\n"
+        },
+    },
+    {
+        "caption": "Repository: Edit .gitignore…",
+        "command": "open_in_editor",
+        "args": {
+            "path": "$working_dir/.gitignore", "line": "$line", "col": "$col",
+            "default": "# Specify filepatterns you want git to ignore.\n\n"
+        },
+    },
+    {
+        "caption": "Open Containing Folder…",
+        "command": "open_dir",
+        "args": { "dir": "$working_dir" },
+    },
+
+    // Preferences
+    {
+        "caption": "Preferences: Edit Settings…",
+        "command": "open_in_editor",
+        "args":
+        {
+            "path": "${packages}/User/Preferences.sublime-settings",
+            "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\n}\n"
+        },
+    },
+    {
+        "caption": "Preferences: Edit Commit Message Settings…",
+        "command": "open_in_editor",
+        "args":
+        {
+            "path": "${packages}/User/Commit Message.sublime-settings",
+            "default": "// Settings in here override those in \"Default/Commit Message.sublime-settings\"\n{\n\n}\n"
+        },
+    },
+    {
+        "caption": "Preferences: Browse Packages…",
+        "command": "open_dir",
+        "args": { "dir": "$packages" },
+    }
+]
