@@ -5,7 +5,7 @@
 	"time_format": "24h",
 	"log_control_tree": true,
     "log_input": false,
-    "log_commands": false,
+    "log_commands": true,
     "font_face": "PragmataPro Mono Liga",
     "font_options": [
         "no_round",
@@ -29,8 +29,10 @@
     "highlight_line": true,
 
     // ? "mini_diff": true,
-	"expand_merge_commits_by_default": false,
+	"expand_merge_commits_by_default": true,
     "hide_pointer_while_typing": false,
 	"translate_tabs_to_spaces": true,
     // "draw_debug": false,
+    "highlight_line_number": true,
+    "highlight_gutter": true,
 }
