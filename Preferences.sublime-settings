@@ -1,17 +1,17 @@
 {
 	"theme": "Meetio Merge Dark.sublime-theme",
+    "color_scheme": "Meetio Dark.sublime-color-scheme",
 	"render_commit_dialog_message_at_top": true,
 	"side_bar_layout": "tabs",
 	"time_format": "24h",
 	"log_control_tree": true,
     "log_input": false,
-    "log_commands": true,
+    "log_commands": false,
     "font_face": "PragmataPro Mono Liga",
     "font_options": [
         "no_round",
         "gray_antialias",
-        // "subpixel_antialias"
-	],
+    ],
     "font_size": 13,
 	"caret_style": "solid",
     // "caret_blink_interval": 0.1,
@@ -23,16 +23,18 @@
         80,
         120,
         160
-	],
+    ],
     "line_padding_bottom": 3,
     "line_padding_top": 3,
-    "highlight_line": true,
 
-    // ? "mini_diff": true,
+    // "mini_diff": true,
+    // "show_minimap": true,
+    // "draw_minimap_border": true,
 	"expand_merge_commits_by_default": true,
     "hide_pointer_while_typing": false,
 	"translate_tabs_to_spaces": true,
     // "draw_debug": false,
+    "highlight_line": true,
     "highlight_line_number": true,
     "highlight_gutter": true,
 }
