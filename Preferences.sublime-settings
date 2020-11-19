@@ -1,5 +1,5 @@
 {
-	"theme": "Meetio Merge Dark.sublime-theme",
+	"theme": "Meetio Dark.sublime-theme",
     "color_scheme": "Meetio Dark.sublime-color-scheme",
 	"render_commit_dialog_message_at_top": true,
 	"side_bar_layout": "tabs",
@@ -30,7 +30,7 @@
     // "mini_diff": true,
     // "show_minimap": true,
     // "draw_minimap_border": true,
-	"expand_merge_commits_by_default": true,
+	"expand_merge_commits_by_default": false,
     "hide_pointer_while_typing": false,
 	"translate_tabs_to_spaces": true,
     // "draw_debug": false,

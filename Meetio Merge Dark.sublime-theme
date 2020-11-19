@@ -1,8 +1,6 @@
 {
     "extends": "Merge.sublime-theme",
     "variables": {
-        "consoleBorder": "var(accentLight)",
-        "font_face": "PragmataPro Mono Liga",
         "cursor": "#ffcc00",
         "foreground": "#dedfe4",
         "background": "#011627",
@@ -201,6 +199,7 @@
         "loadingBall2": "var(blue)",
         "previewFg": "var(foreground)",
         "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
+        "consoleBorder": "var(background)",
         "hazardButtonBg": "var(red)",
         "repositoryTabBarBg": "var(accentLight)",
         "repositoryTabBarBorderBg": "var(background)",
